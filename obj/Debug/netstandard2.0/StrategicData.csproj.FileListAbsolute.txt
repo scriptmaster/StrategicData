@@ -1,0 +1,9 @@
+C:\Users\Admin\source\repos\StrategicDataReader\bin\Debug\netstandard2.0\StrategicData.deps.json
+C:\Users\Admin\source\repos\StrategicDataReader\bin\Debug\netstandard2.0\StrategicData.dll
+C:\Users\Admin\source\repos\StrategicDataReader\bin\Debug\netstandard2.0\StrategicData.pdb
+C:\Users\Admin\source\repos\StrategicDataReader\obj\Debug\netstandard2.0\StrategicData.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\StrategicDataReader\obj\Debug\netstandard2.0\StrategicData.AssemblyInfo.cs
+C:\Users\Admin\source\repos\StrategicDataReader\obj\Debug\netstandard2.0\StrategicData.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\StrategicDataReader\obj\Debug\netstandard2.0\StrategicData.dll
+C:\Users\Admin\source\repos\StrategicDataReader\obj\Debug\netstandard2.0\StrategicData.pdb
+C:\Users\Admin\source\repos\StrategicDataReader\bin\Debug\netstandard2.0\appsettings.json
