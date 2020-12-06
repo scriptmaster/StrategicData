@@ -19,9 +19,9 @@ namespace StrategicData
             Console.WriteLine($"configuration: {Configuration.GetConnectionString("sqlserver")}");
         }
 
-        public void ReadConfiguration()
+        public string ReadConnectionString()
         {
-            // 
+            return Configuration.GetConnectionString("sqlserver");
         }
 
     }
