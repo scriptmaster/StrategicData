@@ -7,29 +7,31 @@ namespace StrategicData
 {
     public class AppDbContext : DbContext
     {
-        private readonly string _connectionString;
+        private readonly string connectionString;
 
-        public DBProvider DBProvider { get; set; }
+        public DBProvider DBProvider { get; set; } = DBProvider.InMemory;
 
         public AppDbContext(string connectionString)
         {
-            _connectionString = connectionString;
+            this.connectionString = connectionString;
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             _ = DBProvider switch
             {
-                DBProvider.SQLServer => optionsBuilder.UseSqlServer(_connectionString),
-                DBProvider.PGSQL => optionsBuilder.UseNpgsql(_connectionString),
-                DBProvider.MySQL => optionsBuilder.UseMySQL(_connectionString),
-                _ => optionsBuilder.UseInMemoryDatabase(_connectionString)
+                DBProvider.SQLServer => optionsBuilder.UseSqlServer(connectionString),
+                DBProvider.PGSQL => optionsBuilder.UseNpgsql(connectionString),
+                DBProvider.MySQL => optionsBuilder.UseMySQL(connectionString),
+                DBProvider.SQLite => optionsBuilder.UseSqlite(connectionString),
+                _ => optionsBuilder.UseInMemoryDatabase(connectionString)
             };
         }
     }
 
     public enum DBProvider
     {
+        InMemory,
         SQLServer,
         PGSQL,
         Oracle,
